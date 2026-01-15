@@ -1,11 +1,7 @@
 pipeline {
   agent { label 'linux-flash-node' }
 
-  options {
-    timestamps()
-    disableConcurrentBuilds()
-    lock('stm32-stlink')   // prevent two jobs flashing at once
-  }
+
 
   environment {
     IMAGE_NAME = "stm32-flasher:${env.BUILD_NUMBER}"
