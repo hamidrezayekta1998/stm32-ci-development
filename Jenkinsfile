@@ -1,6 +1,5 @@
 pipeline {
-  agent { label 'linux-flash-node' }
-
+  agent any
 
 
   environment {
