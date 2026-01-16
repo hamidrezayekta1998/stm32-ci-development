@@ -30,6 +30,6 @@ int main(void)
 
     while (1) {
         GPIOA_ODR ^= (1 << 5);        // LD2
-        delay(80000);
+        delay(800000);
     }
 }
