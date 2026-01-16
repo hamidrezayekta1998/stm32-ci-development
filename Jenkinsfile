@@ -2,6 +2,7 @@ pipeline {
   agent any
 
 
+
   environment {
     IMAGE_NAME = "stm32-flasher:${env.BUILD_NUMBER}"
   }
